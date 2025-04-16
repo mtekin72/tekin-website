@@ -4,6 +4,8 @@ import ProjectCard from '../components/ProjectCard';
 import RepoList from '../components/RepoList';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import { useState } from 'react';
+import Image from 'next/image';
 
 const projects = [
   {
@@ -13,22 +15,69 @@ const projects = [
     codeSnippet: `@Test\npublic void testLogin() {\n  driver.get(\"https://shop.com/login\");\n  driver.findElement(By.id(\"user\")).sendKeys(\"testuser\");\n  driver.findElement(By.id(\"pass\")).sendKeys(\"password\");\n  driver.findElement(By.id(\"login\")).click();\n  assertTrue(driver.findElement(By.id(\"welcome\")).isDisplayed());\n}`,
     image: '/images/project1.png'
   },
-  // Add more projects as needed
+  {
+    title: 'CI/CD Automation with Jenkins',
+    tools: ['Jenkins', 'Docker', 'JUnit'],
+    description: 'Implemented CI/CD pipelines for automated testing and deployment using Jenkins and Docker.',
+    codeSnippet: 'pipeline {\n  agent any\n  stages {\n    stage(\'Build\') { steps { sh \'npm run build\' } }\n    stage(\'Test\') { steps { sh \'npm test\' } }\n  }\n}',
+    image: '/images/project2.png'
+  },
 ];
 
 export default function Portfolio() {
   const { t } = useTranslation('common');
+  const [modal, setModal] = useState<null | number>(null);
+
   return (
     <>
       <Header />
-      <main className="container mx-auto px-4 py-10">
-        <h1 className="text-3xl font-bold mb-6">{t('portfolio')}</h1>
-        <div className="grid md:grid-cols-2 gap-8">
+      <main className="container mx-auto px-4 py-12 md:py-20">
+        <h1 className="text-4xl font-extrabold mb-10 text-secondary text-center">{t('portfolio')}</h1>
+        {/* Portfolio Grid */}
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, idx) => (
-            <ProjectCard key={idx} project={project} />
+            <div
+              key={idx}
+              className="relative bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow cursor-pointer group overflow-hidden"
+              onClick={() => setModal(idx)}
+            >
+              <div className="h-48 w-full relative overflow-hidden">
+                <Image src={project.image} alt={project.title} layout="fill" objectFit="cover" className="group-hover:scale-105 transition-transform duration-300" />
+              </div>
+              <div className="p-6">
+                <h2 className="text-xl font-bold mb-2 text-primary">{project.title}</h2>
+                <div className="flex flex-wrap gap-2 mb-2">
+                  {project.tools.map((tool, i) => (
+                    <span key={i} className="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-semibold">{tool}</span>
+                  ))}
+                </div>
+                <p className="text-gray-700 text-sm line-clamp-3">{project.description}</p>
+              </div>
+              <div className="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-10 transition" />
+            </div>
           ))}
         </div>
-        <RepoList />
+        {/* Modal for Project Details */}
+        {modal !== null && (
+          <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50" onClick={() => setModal(null)}>
+            <div className="bg-white rounded-xl shadow-xl max-w-lg w-full p-8 relative" onClick={e => e.stopPropagation()}>
+              <button className="absolute top-4 right-4 text-gray-400 hover:text-primary text-2xl font-bold" onClick={() => setModal(null)}>&times;</button>
+              <Image src={projects[modal].image} alt={projects[modal].title} width={500} height={250} className="rounded mb-4" />
+              <h2 className="text-2xl font-bold mb-2 text-primary">{projects[modal].title}</h2>
+              <div className="flex flex-wrap gap-2 mb-2">
+                {projects[modal].tools.map((tool, i) => (
+                  <span key={i} className="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-semibold">{tool}</span>
+                ))}
+              </div>
+              <p className="mb-4 text-gray-700">{projects[modal].description}</p>
+              <pre className="bg-gray-100 p-4 rounded text-xs overflow-x-auto mb-2"><code>{projects[modal].codeSnippet}</code></pre>
+            </div>
+          </div>
+        )}
+        {/* GitHub Repositories */}
+        <section className="mt-16">
+          <RepoList />
+        </section>
       </main>
       <Footer />
     </>
