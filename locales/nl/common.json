@@ -1,0 +1,21 @@
+{
+  "home": "Home",
+  "portfolio": "Portfolio",
+  "blog": "Blog",
+  "resume": "CV",
+  "contact": "Contact",
+  "language": "Taal",
+  "intro": "Hallo, ik ben Mustafa Tekin, een Test Automation Engineer met passie voor kwaliteit, automatisering en innovatie.",
+  "view_projects": "Bekijk Projecten",
+  "latest_blog": "Laatste Blogberichten",
+  "download_cv": "CV Downloaden",
+  "contact_me": "Neem Contact Op",
+  "name": "Naam",
+  "email": "E-mail",
+  "message": "Bericht",
+  "send": "Verzenden",
+  "tools_used": "Gebruikte Tools",
+  "code_snippet": "Codefragment",
+  "project_description": "Projectbeschrijving",
+  "github_repos": "GitHub Repositories"
+}
