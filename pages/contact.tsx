@@ -17,10 +17,10 @@ export default function Contact() {
           <div className="mt-10 bg-white rounded-xl shadow p-6 flex flex-col items-center">
             <h2 className="text-lg font-semibold mb-2 text-primary">Professional Contact Details</h2>
             <div className="flex flex-col gap-3 items-center">
-              <a href="mailto:mustafa.tekin@example.com" className="flex items-center gap-2 text-primary hover:underline text-base font-medium">
+              <a href="mailto:mtekin72n@gmail.com" className="flex items-center gap-2 text-primary hover:underline text-base font-medium">
                 <FaEnvelope /> mustafa.tekin@example.com
               </a>
-              <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:underline text-base font-medium">
+              <a href="https://linkedin.com/in/mtekin72" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:underline text-base font-medium">
                 <FaLinkedin /> linkedin.com/in/your-profile
               </a>
             </div>

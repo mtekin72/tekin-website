@@ -18,7 +18,7 @@ export default function Home() {
           <div className="flex-shrink-0">
             <Image
               src="/images/avatar.jpg"
-              alt="Mustafa Tekin Avatar"
+              alt="Tekin Avatar"
               width={160}
               height={160}
               className="rounded-full border-4 border-primary shadow-lg"
