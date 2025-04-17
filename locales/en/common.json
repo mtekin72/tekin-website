@@ -5,7 +5,7 @@
   "resume": "Resume",
   "contact": "Contact",
   "language": "Language",
-  "intro": "Hi, I'm Mustafa Tekin, a Test Automation Engineer passionate about quality, automation, and innovation.",
+  "intro": "Test Automation Engineer passionate about quality, automation, and innovation.",
   "view_projects": "View Projects",
   "latest_blog": "Latest Blog Posts",
   "download_cv": "Download CV",
@@ -17,5 +17,7 @@
   "tools_used": "Tools Used",
   "code_snippet": "Code Snippet",
   "project_description": "Project Description",
-  "github_repos": "GitHub Repositories"
+  "github_repos": "GitHub Repositories",
+  "api": "API",
+  "api_demo": "API Demo"
 }

@@ -1,0 +1,10 @@
+{
+  "name": "cypress-api-tests",
+  "version": "1.0.0",
+  "devDependencies": {
+    "cypress": "^13.6.4"
+  },
+  "scripts": {
+    "test": "cypress run --spec 'tests/cypress/example.cy.js'"
+  }
+}
