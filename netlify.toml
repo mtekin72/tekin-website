@@ -1,9 +1,0 @@
-[build]
-  command = "next build"
-  publish = ".next"
-
-[dev]
-  command = "next dev"
-
-[build.environment]
-  NODE_VERSION = "18"
