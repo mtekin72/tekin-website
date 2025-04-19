@@ -9,11 +9,12 @@ import Image from 'next/image';
 
 const projects = [
   {
-    title: 'Automated UI Testing for E-commerce',
-    tools: ['Selenium', 'JUnit', 'Jenkins'],
-    description: 'Developed robust automated UI tests for an e-commerce platform, ensuring cross-browser compatibility and continuous integration.',
+    title: 'Automated API Testing',
+    tools: ['Cypress','Playwright','Selenium', 'JUnit', 'Jenkins','Postman'],
+    description: 'Developed robust automated AI tests automated API testing for the ReqRes service..and continuous integration.',
     codeSnippet: `@Test\npublic void testLogin() {\n  driver.get(\"https://shop.com/login\");\n  driver.findElement(By.id(\"user\")).sendKeys(\"testuser\");\n  driver.findElement(By.id(\"pass\")).sendKeys(\"password\");\n  driver.findElement(By.id(\"login\")).click();\n  assertTrue(driver.findElement(By.id(\"welcome\")).isDisplayed());\n}`,
-    image: '/images/project1.png'
+    image: '/images/project1.png',
+    repo: 'https://github.com/mtekin72/playwright-api-testing-reqres'
   },
   {
     title: 'CI/CD Automation with Jenkins',
@@ -71,6 +72,16 @@ export default function Portfolio() {
               </div>
               <p className="mb-4 text-gray-700">{projects[modal].description}</p>
               <pre className="bg-gray-100 p-4 rounded text-xs overflow-x-auto mb-2"><code>{projects[modal].codeSnippet}</code></pre>
+              {projects[modal].repo && (
+                <a
+                  href={projects[modal].repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-2 px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700 transition"
+                >
+                  View on GitHub
+                </a>
+              )}
             </div>
           </div>
         )}
