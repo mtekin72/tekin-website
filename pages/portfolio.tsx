@@ -21,7 +21,8 @@ const projects = [
     tools: ['Jenkins', 'Docker', 'JUnit'],
     description: 'Implemented CI/CD pipelines for automated testing and deployment using Jenkins and Docker.',
 
-    image: '/images/project2.png'
+    image: '/images/project2.png',
+    repo: 'https://github.com/mtekin72/jenkins-cicd-pipeline-demo'
   },
 ];
 
