@@ -13,8 +13,6 @@ export default function Header() {
     { href: '/blog', label: t('blog') },
     { href: '/resume', label: t('resume') },
     { href: '/contact', label: t('contact') },
-    { href: '/api', label: t('api') },
-    { href: '/api-demo', label: t('api_demo', { defaultValue: 'API Demo' }) },
   ];
 
   return (
