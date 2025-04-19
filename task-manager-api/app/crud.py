@@ -19,9 +19,8 @@ def create_task(task: TaskCreate, user=Depends(get_current_user)):
     return new_task
 
 @router.get("/", response_model=List[TaskOut])
-def list_tasks():
-    # Public endpoint for demo: returns all tasks (in real app, filter by owner)
-    return fake_tasks
+def list_tasks(user=Depends(get_current_user)):
+    return [t for t in fake_tasks if t.owner_id == user["id"]]
 
 @router.get("/{task_id}", response_model=TaskOut)
 def get_task(task_id: int, user=Depends(get_current_user)):

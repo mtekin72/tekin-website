@@ -4,14 +4,9 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="Task Manager API", description="A demo API for CRUD, auth, and automation testing.", version="1.0.0")
 
-origins = [
-    "http://localhost:3000",
-    "https://tekin-website-k65b.vercel.app",
-    "https://task-manager-api.onrender.com"
-]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
