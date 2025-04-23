@@ -13,10 +13,37 @@ const education = [
 
 const experience = [
   {
-    title: 'Test Automation Engineer',
-    company: 'Example Company',
-    year: '2021-Present',
-    description: 'Developed and maintained automated test suites for web applications, integrated with CI/CD pipelines.'
+    title: 'QA / Software Test Automation Engineer',
+    company: 'Bynder',
+    year: '02.01.2024 - 31.12.2024',
+    description: `
+- Developed and maintained Cypress automation scripts for JavaScript-based tests, ensuring comprehensive test coverage for both legacy and modern environments.
+- Conducted full end-to-end testing of backend processes and API endpoints, verifying asset conversions, uploads, downloads, and metadata management.
+- Performed data migration testing for transitioning to the Bynder Object Store Systems (BOSS) environment, combining Cypress automation and manual validation techniques.
+- Collaborated with backend teams to integrate tests into Jenkins CI/CD pipelines and GitHub workflows, optimizing test execution and improving product performance.
+- Managed the Pull Request (PR) release process using GitHub, validating each release for quality assurance and maintaining smooth deployments.
+- Used Jira and Xray for test case management, linking test cases to requirements and Epics, tracking execution, and visualizing defect distribution through dashboards.
+- Extensively utilized Confluence for documenting test plans, test cases, test preparation, functionality details, and test data management.
+    `
+  },
+  {
+    title: 'QA / Software Test Automation Engineer',
+    company: 'Basic Fit',
+    year: '2021 - 2023',
+    description: `
+- Developed a Cypress-Cucumber BDD Test Automation Framework for Salesforce Commerce Cloud, improving test automation capabilities.
+- Created and executed detailed test plans and test cases for Smoke, Functional, Positive, Negative, and Regression Testing.
+- Collaborated with business analysts and developers for requirement analysis and design reviews to align business needs with testing outcomes.
+- Worked closely with UI designers to ensure a seamless user experience and consistency in the interface.
+- Conducted usability testing, gathering user feedback and identifying areas for UX/UI improvements.
+- Conducted both frontend and backend testing on Salesforce Commerce Cloud, validating data flows and user interactions.
+- Integrated Applitools for visual testing and JMeter for performance testing, ensuring UI consistency and application responsiveness.
+- Performed hands-on manual and exploratory testing to uncover edge cases and unexpected behaviors.
+- Worked in an Agile Scrum environment, participating in iterative testing cycles and sprint planning.
+- Performed acceptance testing to validate business requirements before deployment.
+- Used Jira for test case management, defect tracking, and sprint planning.
+- Utilized Confluence extensively for documentation.
+    `
   },
 ];
 
