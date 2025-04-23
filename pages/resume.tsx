@@ -53,12 +53,32 @@ const experience = [
 ];
 
 const skills = [
-  'Selenium', 'JUnit', 'Jenkins', 'Java', 'JavaScript', 'Cypress', 'REST API Testing'
+  'Java',
+  'JavaScript/TypeScript',
+  'SQL',
+  'Selenium',
+  'JUnit',
+  'TestNG',
+  'Playwright',
+  'Cypress',
+  'REST API Testing',
+  'Postman',
+  'JMeter',
+  'k6',
+  'Jenkins',
+  'GitHub Actions',
+  'Docker',
+  'Agile/Scrum Basics',
+  'Test Strategy Design',
+  'Jira-Xray',
+  'Test Data Management',
+  'Communication Skills',
 ];
 
+
 const certifications = [
-  'Certificate OfCompletion API Testing Foundations',
-  'Certificate OfCompletion AWS Storage and Data Management',
+  'Certificate Of Completion API Testing Foundations',
+  'Certificate Of Completion AWS Storage and Data Management',
   'Certificate OfCompletion Scrum Advanced',
   'Certificate Of Agile Meets Design Thinking'
 ];
