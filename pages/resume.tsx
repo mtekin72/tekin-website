@@ -5,9 +5,14 @@ import { useTranslation } from 'next-i18next';
 
 const education = [
   {
-    title: 'BSc Computer Science',
-    institution: 'Example University',
-    year: '2017-2021',
+    title: "Master of Arts",
+    institution: "Faculty of Security Science-ANKARA",
+    year: "2008-2010",
+  },
+  {
+    title: "Bachelor's Degree",
+    institution: "University of Security Science-Ankara",
+    year: "1990-1994",
   },
 ];
 
