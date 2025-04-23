@@ -15,15 +15,7 @@ export default function Home() {
       <main className="container mx-auto px-4 py-12 md:py-20 flex flex-col items-center">
         {/* Hero Section */}
         <div className="flex flex-col md:flex-row items-center gap-8 w-full max-w-4xl">
-          <div className="flex-shrink-0">
-            <Image
-              src="/images/avatar.jpg"
-              alt="Tekin Avatar"
-              width={160}
-              height={160}
-              className="rounded-full border-4 border-primary shadow-lg"
-            />
-          </div>
+
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-secondary leading-tight">
               Mustafa Tekin
