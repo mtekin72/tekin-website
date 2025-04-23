@@ -7,28 +7,26 @@ import { useTranslation } from 'next-i18next';
 import { useState } from 'react';
 import Image from 'next/image';
 
-const projects = [
-  {
-    title: 'Automated API Testing',
-    tools: ['Cypress','Playwright','Selenium', 'JUnit', 'Jenkins','Postman'],
-    description: 'Developed robust  API testing for the ReqRes service and continuous integration.',
-
-    image: '/images/project1.png',
-    repo: 'https://github.com/mtekin72/playwright-api-testing-reqres'
-  },
-  {
-    title: 'CI/CD Automation with Jenkins',
-    tools: ['Jenkins', 'Docker', 'JUnit'],
-    description: 'Implemented CI/CD pipelines for automated testing and deployment using Jenkins and Docker.',
-
-    image: '/images/project2.png',
-    repo: 'https://github.com/mtekin72/jenkins-cicd-pipeline-demo'
-  },
-];
-
 export default function Portfolio() {
   const { t } = useTranslation('common');
   const [modal, setModal] = useState<null | number>(null);
+
+  const projects = [
+    {
+      title: t('project1_title'),
+      tools: ['Cypress','Playwright','Selenium', 'JUnit', 'Jenkins','Postman'],
+      description: t('project1_desc'),
+      image: '/images/project1.png',
+      repo: 'https://github.com/mtekin72/playwright-api-testing-reqres'
+    },
+    {
+      title: t('project2_title'),
+      tools: ['Jenkins', 'Docker', 'JUnit'],
+      description: t('project2_desc'),
+      image: '/images/project2.png',
+      repo: 'https://github.com/mtekin72/jenkins-cicd-pipeline-demo'
+    },
+  ];
 
   return (
     <>

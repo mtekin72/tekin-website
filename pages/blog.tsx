@@ -4,27 +4,27 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 
-const posts = [
-  {
-    title: 'The Importance of Test Automation in Agile',
-    excerpt: 'Discover why test automation is crucial for agile teams and how it accelerates delivery.',
-    date: '2024-12-01',
-    slug: 'test-automation-agile',
-    tags: ['Agile', 'Automation'],
-    author: 'Mustafa Tekin'
-  },
-  {
-    title: 'Continuous Integration Best Practices',
-    excerpt: 'A practical guide to implementing CI for robust test automation workflows.',
-    date: '2024-10-15',
-    slug: 'ci-best-practices',
-    tags: ['CI/CD', 'Jenkins'],
-    author: 'Mustafa Tekin'
-  },
-];
-
 export default function Blog() {
   const { t } = useTranslation('common');
+
+  const posts = [
+    {
+      title: t('blog1_title'),
+      excerpt: t('blog1_excerpt'),
+      date: '2024-12-01',
+      slug: 'test-automation-agile',
+      tags: ['Agile', 'Automation'],
+      author: 'Mustafa Tekin'
+    },
+    {
+      title: t('blog2_title'),
+      excerpt: t('blog2_excerpt'),
+      date: '2024-10-15',
+      slug: 'ci-best-practices',
+      tags: ['CI/CD', 'Jenkins'],
+      author: 'Mustafa Tekin'
+    },
+  ];
   return (
     <>
       <Header />

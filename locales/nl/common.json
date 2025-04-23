@@ -17,5 +17,13 @@
   "tools_used": "Gebruikte Tools",
   "code_snippet": "Codefragment",
   "project_description": "Projectbeschrijving",
-  "github_repos": "GitHub Repositories"
+  "github_repos": "GitHub Repositories",
+  "project1_title": "Geautomatiseerd API-testen",
+  "project1_desc": "Robuuste API-tests ontwikkeld voor de ReqRes-service en continue integratie.",
+  "project2_title": "CI/CD Automatisering met Jenkins",
+  "project2_desc": "CI/CD-pijplijnen geïmplementeerd voor geautomatiseerd testen en deployment met Jenkins en Docker.",
+  "blog1_title": "Het Belang van Testautomatisering in Agile",
+  "blog1_excerpt": "Ontdek waarom testautomatisering cruciaal is voor agile teams en hoe het de levering versnelt.",
+  "blog2_title": "Best Practices voor Continue Integratie",
+  "blog2_excerpt": "Een praktische gids voor het implementeren van CI voor robuuste testautomatiseringsworkflows."
 }
