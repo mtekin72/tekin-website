@@ -57,7 +57,10 @@ const skills = [
 ];
 
 const certifications = [
-  'ISTQB Certified Tester'
+  'Certificate OfCompletion API Testing Foundations',
+  'Certificate OfCompletion AWS Storage and Data Management',
+  'Certificate OfCompletion Scrum Advanced',
+  'Certificate Of Agile Meets Design Thinking'
 ];
 
 export default function Resume() {
