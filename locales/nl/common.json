@@ -5,7 +5,7 @@
   "resume": "CV",
   "contact": "Contact",
   "language": "Taal",
-  "intro": "Hallo, ik ben Mustafa Tekin, een Test Automation Engineer met passie voor kwaliteit, automatisering en innovatie.",
+  "intro": "Ik ben een Software Test Automation Engineer met diepgaande expertise in het opzetten van automatiseringsframeworks en teststrategieën voor SaaS-platforms, met specialisatie in Cypress, Playwright (JavaScript/TypeScript) en Selenium (Java). Onlangs heb ik mijn vaardigheden verder ontwikkeld via een cursus over Playwright en AI-gedreven automatisering. Ik ben gepassioneerd over het integreren van innovatieve technologieën, het verbeteren van testprocessen en het stimuleren van vernieuwing binnen softwarekwaliteit.",
   "view_projects": "Bekijk Projecten",
   "latest_blog": "Laatste Blogberichten",
   "download_cv": "CV Downloaden",
@@ -25,5 +25,22 @@
   "blog1_title": "Het Belang van Testautomatisering in Agile",
   "blog1_excerpt": "Ontdek waarom testautomatisering cruciaal is voor agile teams en hoe het de levering versnelt.",
   "blog2_title": "Best Practices voor Continue Integratie",
-  "blog2_excerpt": "Een praktische gids voor het implementeren van CI voor robuuste testautomatiseringsworkflows."
+  "blog2_excerpt": "Een praktische gids voor het implementeren van CI voor robuuste testautomatiseringsworkflows.",
+
+  "education_1_title": "Master of Arts",
+  "education_1_institution": "Faculteit Veiligheidswetenschappen-ANKARA",
+  "education_1_year": "2008-2010",
+  "education_2_title": "Bachelor diploma",
+  "education_2_institution": "Universiteit voor Veiligheidswetenschappen-Ankara",
+  "education_2_year": "1990-1994",
+
+  "experience_1_title": "QA / Software Testautomatiseringsingenieur",
+  "experience_1_company": "Bynder",
+  "experience_1_year": "02.01.2024 - 31.12.2024",
+  "experience_1_desc": "- Ontwikkelde en beheerde Cypress-automatiseringsscripts voor JavaScript-tests, waarmee een uitgebreide testdekking voor zowel legacy- als moderne omgevingen werd gegarandeerd.\n- Voerde volledige end-to-end tests uit van backendprocessen en API-eindpunten, waarbij assetconversies, uploads, downloads en metadata-beheer werden geverifieerd.\n- Voerde gegevensmigratietests uit voor de overgang naar het Bynder Object Store Systems (BOSS)-milieu, met een combinatie van Cypress-automatisering en handmatige validatietechnieken.\n- Werkte samen met backendteams om tests te integreren in Jenkins CI/CD-pijplijnen en GitHub-workflows, optimaliseerde testuitvoering en verbeterde productprestaties.\n- Beheerde het Pull Request (PR) releaseproces via GitHub, valideerde elke release op kwaliteitsborging en zorgde voor soepele implementaties.\n- Gebruikte Jira en Xray voor testcasemanagement, koppelde testcases aan vereisten en Epics, volgde uitvoering en visualiseerde defectverdeling via dashboards.\n- Benut Confluence uitgebreid voor het documenteren van testplannen, testcases, testvoorbereiding, functionaliteitsdetails en testdatabeheer.",
+
+  "experience_2_title": "QA / Software Testautomatiseringsingenieur",
+  "experience_2_company": "Basic Fit",
+  "experience_2_year": "2021 - 2023",
+  "experience_2_desc": "- Ontwikkelde een Cypress-Cucumber BDD Testautomatiseringsframework voor Salesforce Commerce Cloud, waardoor de testautomatiseringsmogelijkheden werden verbeterd.\n- Maakte en voerde gedetailleerde testplannen en testcases uit voor Smoke, Functionele, Positieve, Negatieve en Regressietests.\n- Werkte samen met businessanalisten en ontwikkelaars voor requirementsanalyse en ontwerpbeoordelingen om zakelijke behoeften af te stemmen op testresultaten.\n- Werkte nauw samen met UI-ontwerpers om een naadloze gebruikerservaring en consistentie in de interface te waarborgen.\n- Voerde gebruikerstests uit, verzamelde gebruikersfeedback en identificeerde gebieden voor UX/UI-verbeteringen.\n- Voerde zowel frontend- als backendtests uit op Salesforce Commerce Cloud, valideerde gegevensstromen en gebruikersinteracties.\n- Integreerde Applitools voor visuele tests en JMeter voor prestatietests, waarmee UI-consistentie en applicatieresponsiviteit werden gegarandeerd.\n- Voerde hands-on handmatige en verkennende tests uit om randgevallen en onverwacht gedrag te ontdekken.\n- Werkte in een Agile Scrum-omgeving, nam deel aan iteratieve testcycli en sprintplanning.\n- Voerde acceptatietests uit om zakelijke vereisten voor implementatie te valideren.\n- Gebruikte Jira voor testcasemanagement, defecttracking en sprintplanning.\n- Benut Confluence uitgebreid voor documentatie."
 }
