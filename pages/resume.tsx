@@ -8,29 +8,50 @@ export default function Resume() {
 
   const education = [
     {
-      title: t('education_1_title'),
-      institution: t('education_1_institution'),
-      year: t('education_1_year'),
+      title: "Master of Arts",
+      institution: "Faculty of Security Science-ANKARA",
+      year: "2008-2010",
     },
     {
-      title: t('education_2_title'),
-      institution: t('education_2_institution'),
-      year: t('education_2_year'),
+      title: "Bachelor's Degree",
+      institution: "University of Security Science-Ankara",
+      year: "1990-1994",
     },
   ];
 
   const experience = [
     {
-      title: t('experience_1_title'),
-      company: t('experience_1_company'),
-      year: t('experience_1_year'),
-      description: t('experience_1_desc'),
+      title: 'QA / Software Test Automation Engineer',
+      company: 'Bynder',
+      year: '02.01.2024 - 31.12.2024',
+      description: `
+  - Developed and maintained Cypress automation scripts for JavaScript-based tests, ensuring comprehensive test coverage for both legacy and modern environments.
+  - Conducted full end-to-end testing of backend processes and API endpoints, verifying asset conversions, uploads, downloads, and metadata management.
+  - Performed data migration testing for transitioning to the Bynder Object Store Systems (BOSS) environment, combining Cypress automation and manual validation techniques.
+  - Collaborated with backend teams to integrate tests into Jenkins CI/CD pipelines and GitHub workflows, optimizing test execution and improving product performance.
+  - Managed the Pull Request (PR) release process using GitHub, validating each release for quality assurance and maintaining smooth deployments.
+  - Used Jira and Xray for test case management, linking test cases to requirements and Epics, tracking execution, and visualizing defect distribution through dashboards.
+  - Extensively utilized Confluence for documenting test plans, test cases, test preparation, functionality details, and test data management.
+      `
     },
     {
-      title: t('experience_2_title'),
-      company: t('experience_2_company'),
-      year: t('experience_2_year'),
-      description: t('experience_2_desc'),
+      title: 'QA / Software Test Automation Engineer',
+      company: 'Basic Fit',
+      year: '2021 - 2023',
+      description: `
+  - Developed a Cypress-Cucumber BDD Test Automation Framework for Salesforce Commerce Cloud, improving test automation capabilities.
+  - Created and executed detailed test plans and test cases for Smoke, Functional, Positive, Negative, and Regression Testing.
+  - Collaborated with business analysts and developers for requirement analysis and design reviews to align business needs with testing outcomes.
+  - Worked closely with UI designers to ensure a seamless user experience and consistency in the interface.
+  - Conducted usability testing, gathering user feedback and identifying areas for UX/UI improvements.
+  - Conducted both frontend and backend testing on Salesforce Commerce Cloud, validating data flows and user interactions.
+  - Integrated Applitools for visual testing and JMeter for performance testing, ensuring UI consistency and application responsiveness.
+  - Performed hands-on manual and exploratory testing to uncover edge cases and unexpected behaviors.
+  - Worked in an Agile Scrum environment, participating in iterative testing cycles and sprint planning.
+  - Performed acceptance testing to validate business requirements before deployment.
+  - Used Jira for test case management, defect tracking, and sprint planning.
+  - Utilized Confluence extensively for documentation.
+      `
     },
   ];
 

@@ -16,7 +16,7 @@ export default function Portfolio() {
       title: t('project1_title'),
       tools: ['Cypress','Playwright','Selenium', 'JUnit', 'Jenkins','Postman'],
       description: t('project1_desc'),
-      image: '/images/project1.png',
+      image: '/images/avatar.jpg',
       repo: 'https://github.com/mtekin72/playwright-api-testing-reqres'
     },
     {
@@ -42,7 +42,7 @@ export default function Portfolio() {
               onClick={() => setModal(idx)}
             >
               <div className="h-48 w-full relative overflow-hidden">
-                <Image src={project.image} alt={project.title} layout="fill" objectFit="cover" className="group-hover:scale-105 transition-transform duration-300" />
+                <Image src={project.image} alt={project.title} layout="fill" objectFit="cover" className="group-hover:scale-105 transition-transform duration-300" onError={(e) => { e.currentTarget.src = '/images/avatar.jpg'; }} />
               </div>
               <div className="p-6">
                 <h2 className="text-xl font-bold mb-2 text-primary">{project.title}</h2>
@@ -62,7 +62,7 @@ export default function Portfolio() {
           <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50" onClick={() => setModal(null)}>
             <div className="bg-white rounded-xl shadow-xl max-w-lg w-full p-8 relative" onClick={e => e.stopPropagation()}>
               <button className="absolute top-4 right-4 text-gray-400 hover:text-primary text-2xl font-bold" onClick={() => setModal(null)}>&times;</button>
-              <Image src={projects[modal].image} alt={projects[modal].title} width={500} height={250} className="rounded mb-4" />
+              <Image src={projects[modal].image} alt={projects[modal].title} width={500} height={250} className="rounded mb-4" onError={(e) => { e.currentTarget.src = '/images/avatar.jpg'; }} />
               <h2 className="text-2xl font-bold mb-2 text-primary">{projects[modal].title}</h2>
               <div className="flex flex-wrap gap-2 mb-2">
                 {projects[modal].tools.map((tool, i) => (
@@ -71,16 +71,6 @@ export default function Portfolio() {
               </div>
               <p className="mb-4 text-gray-700">{projects[modal].description}</p>
 
-              {projects[modal].repo && (
-                <a
-                  href={projects[modal].repo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block mt-2 px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700 transition"
-                >
-                  View on GitHub
-                </a>
-              )}
               {projects[modal].repo && (
                 <a
                   href={projects[modal].repo}
