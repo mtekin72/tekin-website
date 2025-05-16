@@ -8,7 +8,7 @@ export default function RepoList() {
 
   useEffect(() => {
     axios.get('https://api.github.com/users/mtekin72/repos?sort=updated')
-      .then(res => setRepos(res.data.slice(0, 2))) // Show latest 5
+      .then(res => setRepos(res.data.slice(0, 4))) // Show latest 4
       .catch(() => setRepos([]));
   }, []);
 
